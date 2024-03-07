@@ -80,7 +80,6 @@ RUN    set -ex \
     && apt-get install -y --no-install-recommends \
            build-essential \
            ca-certificates \
-		   libldap-common \
            curl \
            gnupg \
            libapr1-dev \
@@ -268,6 +267,7 @@ RUN    set -ex \
     && apt-get update -y \
     && apt-get install -y --no-install-recommends \
            ca-certificates \
+		   libldap-common \
            cron \
            curl \
            cvs \
